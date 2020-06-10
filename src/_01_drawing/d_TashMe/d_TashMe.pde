@@ -37,12 +37,15 @@ void draw() {
 
 // 7. DRAW MUSTACHE. Use the image() command to draw the mustache.  
 //                  The image command looks like this:
-image (mustache, 200,200);
+if (mousePressed) {
+image (mustache, mouseX,mouseY);
+} 
+
 //    The numbers specify where to draw the mustache. They represent the top left corner of the image
 //    Run the program to see if the mustache is drawn on the face. Get this working before you go on.
 //    If you need to resize the image, do it in the setup() method after you loaded the image.
   
-// 8.  MOVE.  Change the DRAW MUSTACHE code to use      mouseX, mousY      in place of the numbers.
+// 8.  MOVE.  Change the DRAW MUSTACHE code to use mouseX, mousY    in place of the numbers.
 //     Run the program to see the mustache move around when you move the mouse.
 
 
@@ -52,5 +55,4 @@ image (mustache, 200,200);
 //               so the mustache center appears where the mouse pointer is
 //     Draw a hat on the sketch when the right mouse button is pressed. Use this code.
 //               if (mouseButton == RIGHT)  {     }
-
 }
