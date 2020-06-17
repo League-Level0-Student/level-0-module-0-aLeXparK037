@@ -28,16 +28,19 @@ public class FlamingNinjaStar {
 			ap.move(64);
 
 			   // TURN LEFT      Turn the robot 40 degrees to the LEFT. (Negative numbers will turn the robot counter-clockwise.)
-			ap.turn(40);
+			ap.turn(-40);
 			   // DRAW FLAME     Move the robot the distance in the variable flameSize
+			ap.setPenColor(Color.YELLOW);
 			ap.move(flameSize);
+			
 				//               Turn the robot 170 degrees
 			ap.turn(170);
 				//               Move the robot the distance in the variable flameSize (again)
 			ap.move(flameSize);
 			   // TURN RIGHT     Turn the robot 64 degrees to the right
-			ap.turn(-64);
+			ap.turn(64);
 				// DRAW          Move the robot the distance in the variable baseSize
+			ap.setPenColor(Color.BLACK);
 			ap.move(flameSize);
 		}
 		// TEST   Run the program. Check that your shape is the same as the first picture in the recipe. 
