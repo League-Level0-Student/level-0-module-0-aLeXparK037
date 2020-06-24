@@ -9,6 +9,8 @@ public class AwesomeOrNot {
 	// 1. Make a main method that includes everything below
 public static void main(String[] args) {
 	
+
+
 	
 
 	
@@ -19,26 +21,45 @@ public static void main(String[] args) {
 		System.out.println(number);
 	
 		// 3. Set your variable equal to a positive number less than 4 using     ran.nextInt(4); 
+		 
 	
 		// 3. Print your variable to the console
+		JOptionPane.showMessageDialog(null, "number =" + number);
 	
 		// 4. Get the user to enter something that they think is awesome
 		String awesome = JOptionPane.showInputDialog("Enter something that is awesome");
 	
 		// 5. If your variable is  0
+		if (number == (0)) {
+			JOptionPane.showMessageDialog(null, "That is Awesome");
+		}
+		
 	
 			// -- tell the user whatever they entered is awesome!
 	
 		// 6. If your variable is  1
-	
+		if (number == (1)) {
+			JOptionPane.showMessageDialog(null, "That is ok");
+		}
+		
 			// -- tell the user whatever they entered is ok.
 	
 		// 7. If your variable is  2
+		if (number == (2)) {
+			JOptionPane.showMessageDialog(null, "That is boring");
+		}
+		
 	
 			// -- tell the user whatever they entered is boring.
 	
 		// 8. If your variable is  3
+		if (number == (3)) {
+			JOptionPane.showMessageDialog(null, "That is really boring");
+		}
+		
 	
 			// -- invent your own message to give to the user (be nice).
 }
 }
+
+
