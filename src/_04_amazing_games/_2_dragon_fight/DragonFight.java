@@ -54,7 +54,7 @@ public class DragonFight {
 					// -- Subtract the player attack value from the dragon's health
 	
 				// 5. If they typed in "kick":
-			if (action.eqlas("kick")) {
+			if (action.equals("kick")) {
 				playerAttack = ran.nextInt(25);
 				dragonHealth = dragonHealth - playerAttack;
 			}
@@ -78,6 +78,10 @@ public class DragonFight {
 			if (playerHealth <=0) {
 				playerLost();
 			}
+			if (dragonHealth <=0) {
+				dragonLost();
+			}
+			
 	
 			
 				// 9. Else if the dragon's health is less than or equal to 0
@@ -86,10 +90,14 @@ public class DragonFight {
 			
 			// 10.  Pop up a message that tells the player the health levels of player and
 			// 		dragon.
+			JOptionPane.showMessageDialog(null, "Your health ="+ playerHealth +" You lost "+ dragonAttack);
+			
+			JOptionPane.showMessageDialog(null, "Dargon Health ="+ dragonHealth+ " It lost "+ playerAttack);
 
 			
 			// (Bonus: Also display the amount of health that was lost by each in this
 			// round)
+			
 
 		}
 
